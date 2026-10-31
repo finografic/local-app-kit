@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Agents
+.agents/*
+!.agents/
+!.agents/handoff.md
+!.agents/instructions/
+!.agents/instructions/**
+!.agents/skills/
+!.agents/skills/**
+.codex/
+.claude/*
+!.claude/settings.json
+!.claude/commands/
+!.claude/commands/**
+!.claude/skills/
+!.claude/skills/**
+.worktrees/
+
+# IDE
+**/.cursor/**
+!**/.cursor/.gitkeep
+!**/.cursor/rules/
+!**/.cursor/rules/**
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Docs
+docs/drafts/
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache/
+.llm-cache/
+.tmp/
+
+# Testing
+coverage/
+.playwright-mcp/
+
+# TypeScript
+*.tsbuildinfo
+
+# CSS tooling (generated)
+styled-system/
+
+# Monorepos
+.nx/cache
+.nx/workspace-data
+.moon/cache
+.moon/docker
+
+# Database and local app data
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/db/
+data/uploads/
+!data/migrations/
+
+# Web host folders
+cgi-bin/
+fcgi-bin/
+html/
+
+# HTTP client cookies
+cookies.txt
+cookies_*.txt
+
+# Graphify
+graphify-out/
+
+# Archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+
+# Security
+deps-xscan-report.json
