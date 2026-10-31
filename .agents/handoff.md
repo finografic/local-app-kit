@@ -13,28 +13,36 @@
 
 ## Capsule
 
-_At most 5 bullets: what this project is and where it stands right now._
+- Shared building blocks for local-first macOS apps (cover-kit, LLAAB, and future local apps).
+- First module: persisted UI state. Not yet released or consumed.
 
 ## Architecture
 
-_Current architecture, package roles, and boundaries._
+- `src/index.ts` — browser-safe root: shared types and key rules (`src/shared/`). Never imports `node:` or React.
+- `src/ui-state/` → `./ui-state` — Node store (one JSON file) and a Web `Request → Response` handler.
+- `src/react/` → `./react` — `usePersistedUiState` on `useSyncExternalStore` with a per-URL module cache.
+- One tsdown entry per subpath; `package.json` `exports` is hand-written (`exports: false` in tsdown).
 
 ## Status
 
-_What exists now and what is in progress._
+- UI state module complete with tests; usage and API documented in `README.md`.
 
 ## Key Decisions
 
-_Stable conventions and choices that matter to the next agent._
+- React is an optional peer; the hook uses plain `fetch` (no TanStack Query), matching `@finografic/react`'s zero-dependency rule.
+- The handler is framework-free (Web standard) so apps on Hono, Bun or Next mount it in one line.
+- File format matches LLAAB's `configs/ui-state.json`, so LLAAB migrates without converting data.
+- The JSON file belongs to the consuming app's data folder and is gitignored there.
 
 ## Open Work
 
-_Tagged items. One line each._
+- First release to GitHub Packages [planned, not started]
+- Adoption in cover-kit and LLAAB [planned, not started]
 
 ## Next Move
 
-_The single most useful next action, stated concretely._
+Release 0.1.0, then switch cover-kit's library layout to `usePersistedUiState`.
 
 ## Suggested Skills
 
-_Skills the next agent should invoke for the work above._
+_None specific._

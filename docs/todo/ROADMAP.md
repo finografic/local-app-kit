@@ -21,7 +21,9 @@ When an item is done, move it to the Done section at the bottom with a completio
 
 ## Next
 
-- [ ] Review and update this list for the project.
+- [ ] First release (`release:github:minor` → 0.1.0) once the UI state module is reviewed.
+- [ ] Adopt in cover-kit: replace the `localStorage` library layout with `usePersistedUiState('library.layout', …)`.
+- [ ] Adopt in LLAAB: swap the local `routes/ui-state` + `useUiState.ts` for this package (same file format).
 
 ---
 
@@ -39,7 +41,7 @@ _No items yet._
 
 ## P2 — Planned
 
-_No items yet._
+- **macOS file helpers from cover-kit** — move to Trash (`/usr/bin/trash`), Show in Finder, open in an app, debounced folder watcher. Extract once a second app needs them; source lives in cover-kit `apps/server/src/services/`.
 
 ---
 
@@ -51,6 +53,6 @@ _No items yet._
 
 ## Done
 
-| Item                           | Completed |
-| ------------------------------ | --------- |
-| _No completed milestones yet._ | —         |
+| Item                                                            | Completed  |
+| --------------------------------------------------------------- | ---------- |
+| Persisted UI state: Node store, Web handler, React hook, README | 2026-10-31 |
