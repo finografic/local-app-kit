@@ -21,8 +21,6 @@ When an item is done, move it to the Done section at the bottom with a completio
 
 ## Next
 
-- [ ] First release (`release:github:minor` → 0.1.0) once the UI state module is reviewed.
-- [ ] Adopt in cover-kit: replace the `localStorage` library layout with `usePersistedUiState('library.layout', …)`.
 - [ ] Adopt in LLAAB: swap the local `routes/ui-state` + `useUiState.ts` for this package (same file format).
 
 ---
@@ -56,3 +54,5 @@ _No items yet._
 | Item                                                            | Completed  |
 | --------------------------------------------------------------- | ---------- |
 | Persisted UI state: Node store, Web handler, React hook, README | 2026-10-31 |
+| First release 0.1.0 (GitHub Packages)                           | 2026-10-31 |
+| Adopted in cover-kit (library layout)                           | 2026-10-31 |

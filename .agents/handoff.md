@@ -14,7 +14,7 @@
 ## Capsule
 
 - Shared building blocks for local-first macOS apps (cover-kit, LLAAB, and future local apps).
-- First module: persisted UI state. Not yet released or consumed.
+- First module: persisted UI state. Released; used by cover-kit's library layout.
 
 ## Architecture
 
@@ -36,12 +36,11 @@
 
 ## Open Work
 
-- First release to GitHub Packages [planned, not started]
-- Adoption in cover-kit and LLAAB [planned, not started]
+- Adoption in LLAAB [planned, not started]
 
 ## Next Move
 
-Release 0.1.0, then switch cover-kit's library layout to `usePersistedUiState`.
+Switch LLAAB's local `routes/ui-state` and `useUiState.ts` to this package.
 
 ## Suggested Skills
 
