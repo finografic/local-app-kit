@@ -1,7 +1,7 @@
 {
   "name": "@finografic/local-app-kit",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Building blocks for local-first apps on macOS: persisted UI state, filesystem and Finder helpers. Server and React entry points.",
   "homepage": "https://github.com/finografic/local-app-kit",
   "repository": {
